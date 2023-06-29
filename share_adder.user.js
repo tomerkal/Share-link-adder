@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Share link adder
 // @namespace    http://tampermonkey.net/
-// @version      1.1.0
+// @version      1.1.1
 // @description  Add the Share button next to "Other Answers" in relevant review queues
 // @author       Tomer Kalish
 // @match        https://*.stackoverflow.com/review/*
@@ -135,5 +135,6 @@ function check(changes, observer) {
             anchor.appendChild(flex);
             answer.querySelector(".post-layout > .answercell > .mt24 > .ai-start > .mr16 > .js-post-menu").appendChild(anchor);
         }
+        observer.observe(document.querySelector(".js-review-content"), {attributes: true})
     }
 }
