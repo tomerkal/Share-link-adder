@@ -8,6 +8,3 @@ To install this script [click here](https://github.com/tomerkal/Share-link-adder
 
      https://github.com/tomerkal/Share-link-adder/raw/main/share_adder.user.js
      
-### Current Open Issues
-
-- https://github.com/tomerkal/Share-link-adder/issues/1 It doesn't work after skipping and requires a refresh of the page.
