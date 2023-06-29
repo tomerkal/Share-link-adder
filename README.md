@@ -10,4 +10,4 @@ To install this script [click here](https://github.com/tomerkal/Share-link-adder
      
 ### Current Open Issues
 
-- It doesn't work after skipping and requires a refresh of the page.
+- https://github.com/tomerkal/Share-link-adder/issues/1 It doesn't work after skipping and requires a refresh of the page.
