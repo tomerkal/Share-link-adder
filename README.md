@@ -10,5 +10,4 @@ To install this script [click here](https://github.com/tomerkal/Share-link-adder
      
 ### Current Open Issues
 
-- The button doesn't actually open the little pop-up with the link like the native button. It currently can be used as a handy shortcut to right-click and "copy link address" for the answer.
 - It doesn't work after skipping and requires a refresh of the page.
