@@ -1,16 +1,18 @@
 // ==UserScript==
 // @name         Share link adder
 // @namespace    http://tampermonkey.net/
-// @version      1.1.1
-// @description  Add the Share button next to "Other Answers" in relevant review queues
+// @version      1.1.2
+// @description  Add the Share button next to "(other) Answers" tabs in the review queues
 // @author       Tomer Kalish
 // @match        https://*.stackoverflow.com/review/*
-// @match        https://*.stackexchange.com/*
-// @match        https://*.askubuntu.com/*
-// @match        https://*.superuser.com/*
-// @match        https://*.serverfault.com/*
-// @match        https://*.mathoverflow.net/*
-// @match        https://*.stackapps.com/*
+// @match        https://unix.stackexchange.com/review/*
+// @match        https://*.stackexchange.com/review/*
+// @match        https://*.askubuntu.com/review/*
+// @match        https://*.superuser.com/review/*
+// @match        https://*.serverfault.com/review/*
+// @match        https://math.stackexchange.com/review/*
+// @match        https://*.mathoverflow.net/review/*
+// @match        https://*.stackapps.com/review/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=stackoverflow.com
 // @updateURL    https://github.com/tomerkal/Share-link-adder/raw/main/share_adder.user.js
 // @downloadURL  https://github.com/tomerkal/Share-link-adder/raw/main/share_adder.user.js
@@ -33,7 +35,6 @@ function check(changes, observer) {
         }
         const last_index = Math.max.apply(null, indexes)
         let share_index = last_index + 1
-        
         // Iterate over "Other answers"
         const answers_panel = document.querySelector('#panel-answers');
         const answers = answers_panel.getElementsByClassName('answer');
